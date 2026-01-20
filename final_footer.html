@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./final-footer.css" />
   </head>
   <body>
+    
       <div class="main-photo">
         <div class="photo-report">
             <div class="photo-report-container">
@@ -68,7 +69,6 @@
                 <div class="country-item">Uzbekistan</div>
             </div>
         </div>
-
         <div class="menu-item">
             <div class="menu-header" onclick="toggleMenu('europe')">
                 <div class="region-name">Europe</div>
@@ -100,8 +100,120 @@
     </div>
         </div>
     </main>
+<!-- contacts  here -->
+<section class="contact-section">
+        <div class="contact-section__container">
+            <h2 class="contact-section__title">Let's Connect</h2>
+            <p class="contact-section__subtitle">
+                We're excited to connect with you and learn more about your real estate goals. Use the form below to get in touch with Estastein. Whether you're a prospective client, partner, or simply curious about our services, we're here to answer your questions and provide the assistance you need.
+            </p>
 
-
+            <div class="contact-section__form">
+                <!-- : First Name, Last Name, Email -->
+                <div class="contact-section__row">
+                    <div class="contact-section__field">
+                        <label for="cs-firstName" class="contact-section__label">First Name</label>
+                        <input 
+                            type="text" 
+                            id="cs-firstName" 
+                            class="contact-section__input" 
+                            placeholder="Enter First Name"
+                        >
+                    </div>
+                    <div class="contact-section__field">
+                        <label for="cs-lastName" class="contact-section__label">Last Name</label>
+                        <input 
+                            type="text" 
+                            id="cs-lastName" 
+                            class="contact-section__input" 
+                            placeholder="Enter Last Name"
+                        >
+                    </div>
+                    <div class="contact-section__field">
+                        <label for="cs-email" class="contact-section__label">Email</label>
+                        <input 
+                            type="email" 
+                            id="cs-email" 
+                            class="contact-section__input" 
+                            placeholder="Enter your Email"
+                        >
+                    </div>
+                </div>
+                <div class="contact-section__row">
+                    <div class="contact-section__field">
+                        <label for="cs-phone" class="contact-section__label">Phone</label>
+                        <input 
+                            type="tel" 
+                            id="cs-phone" 
+                            class="contact-section__input" 
+                            placeholder="Enter Phone Number"
+                        >
+                    </div>
+                    <div class="contact-section__field">
+                        <label for="cs-inquiryType" class="contact-section__label">Inquiry Type</label>
+                        <div class="contact-section__select-wrapper">
+                            <select id="cs-inquiryType" class="contact-section__select">
+                                <option value="">Select Inquiry Type</option>
+                                <option value="buying">Buying Property</option>
+                                <option value="selling">Selling Property</option>
+                                <option value="renting">Renting</option>
+                                <option value="investment">Investment</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <svg class="contact-section__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contact-section__field">
+                        <label for="cs-howHeard" class="contact-section__label">How Did You Hear About Us?</label>
+                        <div class="contact-section__select-wrapper">
+                            <select id="cs-howHeard" class="contact-section__select">
+                                <option value="">Select</option>
+                                <option value="google">Google Search</option>
+                                <option value="social">Social Media</option>
+                                <option value="referral">Referral</option>
+                                <option value="advertisement">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <svg class="contact-section__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-section__field contact-section__field--full">
+                    <label for="cs-message" class="contact-section__label">Message</label>
+                    <textarea 
+                        id="cs-message" 
+                        class="contact-section__textarea" 
+                        placeholder="Enter your Message here..."
+                    ></textarea>
+                </div>
+                <div class="contact-section__footer">
+                    <div class="contact-section__checkbox-group">
+                        <input 
+                            type="checkbox" 
+                            id="cs-terms" 
+                            class="contact-section__checkbox"
+                        >
+                        <label for="cs-terms" class="contact-section__checkbox-label">
+                            I agree with <span>Terms of Use</span> and <span>Privacy Policy</span>
+                        </label>
+                    </div>
+                    <button 
+                        type="button" 
+                        class="contact-section__submit" 
+                        onclick="handleContactFormSubmit()"
+                    >
+                        Send Your Message
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- spce -->
     <footer class="footer">
       <div class="footer-container">
         <div class="left-footer">
@@ -178,7 +290,7 @@
     <li class="a"><a href="#">Our Offices</a></li>
   </ul>
 </div>
- 
+
           </div>
         </div>
       </div>
@@ -197,6 +309,6 @@
             </div>
             </div>
           </div>
-          <script src="./final.js"></script>
-  </body>
+  <script src="./final.js"></script>
+  </body> 
 </html>

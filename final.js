@@ -13,3 +13,18 @@ function toggleMenu(region) {
                 arrow.classList.add('rotated');
             }
         }
+ function handleSubmit() {
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                inquiryType: document.getElementById('inquiryType').value,
+                howHeard: document.getElementById('howHeard').value,
+                message: document.getElementById('message').value,
+                agreedToTerms: document.getElementById('terms').checked
+            };
+
+            console.log('Form submitted:', formData);
+            alert('Message sent successfully!');
+        }
