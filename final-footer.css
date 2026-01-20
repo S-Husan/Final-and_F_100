@@ -1,3 +1,7 @@
+body{
+    background-color: #000;
+}
+
 .main-container {
     max-width: 1500px;
     width: 100%;
